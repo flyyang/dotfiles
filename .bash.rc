@@ -1,14 +1,15 @@
-# .bashrc                                                                 
-                                                                          
-# Source global definitions                                               
-if [ -f /etc/bashrc ]; then                                               
-        . /etc/bashrc                                                     
-fi                                                                        
-                                                                          
-# User specific aliases and functions                                     
-alias ls="ls -al --color=auto"                                            
-alias grep="grep --color"                                                 
-# danger action confirm                                                   
-alias rm="rm -i"                                                          
-alias mv="mv -i"                                                          
-alias cp="cp -i"                                                          
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias ls="ls -al --color=auto"
+alias grep="grep --color"
+# danger action confirm
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+alias gdnm="git branch | grep -v 'master' | xargs git branch -D"
